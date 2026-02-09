@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERFUMEY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="content">
+    <nav class="navbar">
+        <h1>PERFUMEY</h1>
+        <ul>
+            <li onclick="setActive(this)">Home</li>
+            <li onclick="setActive(this)">Products</li>
+            <li onclick="setActive(this)">About</li>
+            <li onclick="setActive(this)">Service</li>
+        </ul>
+        <div class="cart">
+            🛒 <span id="cartCount">0</span>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="text">
+            <h2 id="titleText">Luxury Perfume</h2>
+            <p>Experience long-lasting fragrance.</p>
+            <button onclick="addToCart()">Buy Now</button>
+            <button onclick="changeTheme()">Change Theme</button>
+        </div>
+
+        <div class="image-box">
+            <img src="https://via.placeholder.com/400x300">
+            <div class="img-text">Premium Collection</div>
+        </div>
+    </div>
+
+</section>
+
+<section class="products">
+    <div class="card" onclick="showDetails(this)">
+        <img src="https://via.placeholder.com/200">
+        <p>Woody Fragrance</p>
+    </div>
+    <div class="card" onclick="showDetails(this)">
+        <img src="https://via.placeholder.com/200">
+        <p>Fresh Citrus</p>
+    </div>
+    <div class="card" onclick="showDetails(this)">
+        <img src="https://via.placeholder.com/200">
+        <p>Office Wear</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2026 PERFUMEY</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
